@@ -1,0 +1,66 @@
+/*google fonts start*/
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap"); /*header*/
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Open+Sans&family=Poppins&family=Roboto:ital,wght@1,300&display=swap"); /*h2*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); /*cards and other*/
+/*google fonts end*/
+
+/*styles of fragments*/
+@import "./shopping_cart.scss";
+@import "./database.scss";
+/*styles of fragments*/
+
+/*main structure start*/
+body {
+  margin: 0%;
+  background: white;
+}
+
+header {
+  background-color: rgb(19, 19, 19);
+  min-height: 10rem;
+}
+.header-text {
+  color: white;
+  font-family: "League Gothic", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 2rem;
+  cursor: default;
+}
+
+.container {
+  background: rgba(101, 47, 159, 0.315);
+  background: linear-gradient(
+    90deg,
+    rgba(101, 47, 159, 0.404) 13%,
+    rgba(40, 103, 158, 0.397) 100%
+  );
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  max-width: 80em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(19, 19, 19);
+  border-radius: 3px;
+  min-height: 1em;
+  color: white;
+  font-family: "League Gothic", sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 2rem;
+}
+/*main structure end*/
+
+/*text start*/
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7em;
+  color: black;
+  padding: 1em;
+  text-align: left;
+}
+/*text end*/
