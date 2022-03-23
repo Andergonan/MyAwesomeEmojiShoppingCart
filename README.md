@@ -1,4 +1,5 @@
 # My Awesome Emoji Shopping Cart
+**Author:** David Anderle
 
 - Projekt zadaný školou
 - Nepoužívá sql, pouze pole v php
@@ -29,8 +30,6 @@ Web je responzibilní, jeho zobrazení na telefonu je tak i nadále velmi přív
 > - UML diagram tříd
 > - řádně připravený README.md
 > - Odevzdávejte jako odkaz na projekt ve vašem githubu.
-
-**Author:** David Anderle
 
 ## LICENSE:
 
