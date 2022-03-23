@@ -9,6 +9,7 @@
 
 Po připojení se k webu, nás uvítá jeho přívětivé rozraní.
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
+Web je tvořen tzv. skládáním. Fragmenty 
 
 
 ## Zadání
