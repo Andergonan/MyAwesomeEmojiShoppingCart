@@ -4,11 +4,21 @@
 - Nepoužívá sql, pouze pole v php
 - Pro spuštění je potřeba soubory nahrát na váš server
 
-![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
-**_zobrazení na PC_**
+## Typy zobrazení
 
+### Zobrazení na PC 1
+![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
+
+### Zobrazení na PC 2 (s nákupním košíkem)
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_2.png)
-**_zobrazení na PC s nákupním košíkem_**
+
+Web je responzibilní, jeho zobrazení na telefonu je tak i nadále velmi přívětivé.
+
+### Zobrazení na telefonu 1
+![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_m_1.jpg)
+
+### Zobrazení na telefonu 2 (s nákupním košíkem)
+![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_m_3.jpg)
 
 ## Zadání
 
@@ -22,7 +32,7 @@
 
 **Author:** David Anderle
 
-**LICENSE:**
+## LICENSE:
 
 > MIT License
 
