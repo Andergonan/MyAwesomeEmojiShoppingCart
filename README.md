@@ -4,10 +4,10 @@
 - Nepoužívá sql, pouze pole v php
 - Pro spuštění je potřeba soubory nahrát na váš server
 
-![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/img_documentation/screenshot_pc_1.png)
+![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
 **_zobrazení na PC_**
 
-![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/img_documentation/screenshot_pc_2.png)
+![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_2.png)
 **_zobrazení na PC s nákupním košíkem_**
 
 ## Zadání
