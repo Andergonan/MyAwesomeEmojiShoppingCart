@@ -11,6 +11,16 @@
 >
 > `<?php include_once("appdata/fragments/file.php") ?>`
 
+> - Každý nabízený produkt, je utvořen pomocí proměnné s array, která se nakonec zapisuje do pole:
+> 
+> `$hamburger = array(
+    "id" => 7,
+    "img" => "🍔",
+    "name" => "Hamburger",
+    "price" => "32",
+);
+$database = array($Hamburger);`
+
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
 
