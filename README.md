@@ -21,6 +21,18 @@
 );
 $database = array($Hamburger);`
 
+> - Nabízené produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach:
+> foreach($database as $item) {
+    echo 
+        '<div class="items-container">
+            <div class="item-img">'.$item["img"].'</div>
+            <div class="item-name">'.$item["name"].'</div>
+            <div class="item-price">'.$item["price"].' Kč</div>
+            <a href="?action=add&id='.$item["id"].'" class="item-btn">👉 Do košíku</a>
+        </div>';
+}
+?>
+
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
 
