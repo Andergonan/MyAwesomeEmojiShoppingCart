@@ -10,6 +10,10 @@
 > - Webová stránka je tvořena tzv. skládáním, index.php je doplněn dalšími soubory, které se do něj zapisují:
 >
 > `<?php include_once("appdata/fragments/file.php") ?>`
+>
+> - Každý jednotlivý file, má také svoje styly, které jsou pak sjednoceny v hlavním style.scss pomocí:
+> 
+> `@import "./file.scss";`
 
 > - Každý nabízený produkt, je utvořen pomocí proměnné s array, která se nakonec zapisuje do pole:
 > 
@@ -32,6 +36,7 @@ $database = array($Hamburger);`
         </div>';
 }
 ?>`
+> - Princip výpisu produktů v košíku je principiálně stejný, pouze jsou použity jiné hodnoty.
 
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
