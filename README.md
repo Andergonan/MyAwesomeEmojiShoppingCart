@@ -7,9 +7,10 @@
 
 ## Popis
 
-Webová stránka je tvořena tzv. skládáním, index.php je doplněn dalšími soubory, který se do něj zapisují pomocí 
+> - Webová stránka je tvořena tzv. skládáním, index.php je doplněn dalšími soubory, které se do něj zapisují:
+>
+> `<?php include_once("appdata/fragments/file.php") ?>`
 
-`<?php include_once("appdata/fragments/file.php") ?>`
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
 
