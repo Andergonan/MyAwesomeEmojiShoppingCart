@@ -83,7 +83,7 @@ session_start();
     }
 ```
 
-- Pokud je zvolena akce "add"
+- Pokud je zvolena akce "add".
 ```
     if ($_GET["action"] == "add" && !empty($_GET["id"])) {
         addToCart($_GET["id"]);
@@ -125,7 +125,23 @@ if ($_GET["action"] == "remove" && !empty($_GET["id"])) {
     }
 ```
 
-- 
+- Pokud je zvolena akce "remove".
+
+```
+if ($_GET["action"] == "remove" && !empty($_GET["id"])) {
+        removeFromCart($_GET["id"]);
+    }
+```
+
+- s
+
+```
+        if (array_key_exists($productId, $_SESSION["cart"])) {
+            if ($_SESSION["cart"][$productId]["quantity"] <= 1) {
+                unset($_SESSION["cart"][$productId]);
+            }
+```
+
 
 #### Maznání itemů
 
