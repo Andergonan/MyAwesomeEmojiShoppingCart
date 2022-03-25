@@ -44,8 +44,6 @@ foreach($database as $item) {
 }
 ?>
 ```
-- Výpis produktů z košíku je principiálně stejný, pouze jsou použity jiné hodnoty.
-
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
 
