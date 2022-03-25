@@ -181,6 +181,7 @@ if ($_GET["action"] == "remove" && !empty($_GET["id"])) {
 
 ```
 $totalPrice = 0;
+
     //forcycle - print selected items
     foreach ($_SESSION["cart"] as $key => $value) {
         $item = $database[getBy("id", $key, $database)];
@@ -197,8 +198,21 @@ $totalPrice = 0;
                 <a href="?action=delete&id='.$item["id"].'" class="cart-btn">Odebrat</a>
             </div>';
     }
+    
     echo "<div class='cart-total-price'>Celková cena: $totalPrice Kč</div>" //print total price
 ```
+
+- Po načtení stránky je celková cena na hodnotě 0
+
+```
+$totalPrice = 0;
+```
+
+- Sčítá totalPrice s cenou všech produtů a jejich počtu v košíku.
+
+```
+ $totalPrice = $totalPrice + ($value["quantity"] * $item["price"]);
+ ```
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/img_2.png)
 
