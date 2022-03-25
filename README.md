@@ -7,20 +7,20 @@
 
 ## Popis
 
-> - Webová stránka je tvořena tzv. skládáním, index.php je doplněn dalšími soubory, které se do něj zapisují:
->
+- Webová stránka je tvořena tzv. skládáním, index.php je doplněn dalšími soubory, které se do něj zapisují:
+
 ```
 <?php include_once("appdata/fragments/file.php") ?>
 ```
->
-> - Každý jednotlivý file, má také svoje styly, které jsou pak sjednoceny v hlavním style.scss pomocí:
-> 
+
+- Každý jednotlivý file, má také svoje styly, které jsou pak sjednoceny v hlavním style.scss pomocí:
+ 
 ```
 @import "./file.scss";
 ```
 
-> - Každý nabízený produkt, je utvořen pomocí proměnné s array, která se nakonec zapisuje do pole:
-> 
+- Každý nabízený produkt, je utvořen pomocí proměnné s array, která se nakonec zapisuje do pole:
+ 
 ```
  $hamburger = array(
     "id" => 7,
@@ -31,8 +31,9 @@
 $database = array($Hamburger);
 ```
 
-> - Nabízené produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach:
-> `foreach($database as $item) {
+- Nabízené produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach:
+ ```
+foreach($database as $item) {
     echo 
         '<div class="items-container">
             <div class="item-img">'.$item["img"].'</div>
@@ -41,8 +42,9 @@ $database = array($Hamburger);
             <a href="?action=add&id='.$item["id"].'" class="item-btn">👉 Do košíku</a>
         </div>';
 }
-?>`
-> - Výpis produktů v košíku je principiálně stejný, pouze jsou použity jiné hodnoty.
+?>
+```
+- Výpis produktů v košíku je principiálně stejný, pouze jsou použity jiné hodnoty.
 
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
