@@ -136,6 +136,10 @@ $totalPrice = 0;
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/img_2.png)
 
+### UML class diagram
+
+![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/classDiagram.png)
+
 ## Zadání
 
 > Napište demo program se dvěma třídami dle vašeho uvážení, které spolu nějak interagují (dědění, skládání atp).
