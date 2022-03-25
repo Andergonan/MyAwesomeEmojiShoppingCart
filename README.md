@@ -90,7 +90,7 @@ session_start();
     }
 ```
 
-- Pokud chceme, tak přidává množství pro určitý item.
+- Přidává množství.
 ```
 ...["action"] == "add"
 ```
@@ -101,7 +101,7 @@ if (!array_key_exists($productId, $_SESSION["cart"])) {
                 $_SESSION["cart"][$productId]["quantity"] = 1;
  ```
  
-- Pokud se daný item v košíku již nachází, přičte k němu "+ množství".
+- Přičítá množství.
  ```
 else {
        $_SESSION["cart"][$productId]["quantity"]++;
@@ -133,7 +133,7 @@ if ($_GET["action"] == "remove" && !empty($_GET["id"])) {
     }
 ```
 
-- s
+- Pokud je v košíku množství itemu 1 nebo menší.
 
 ```
         if (array_key_exists($productId, $_SESSION["cart"])) {
@@ -142,14 +142,36 @@ if ($_GET["action"] == "remove" && !empty($_GET["id"])) {
             }
 ```
 
+- Jinak odečítá množství.
+
+```
+ else {
+  $_SESSION["cart"][$productId]["quantity"]--;
+ }
+```
 
 #### Maznání itemů
 
 ```
-    //delete the selected item
     if ($_GET["action"] == "delete" && !empty($_GET["id"])) {
         deleteFromCart($_GET["id"]);
     }
+    function deleteFromCart($productId) {
+        unset($_SESSION["cart"][$productId]);
+    }
+```
+
+- Pokud je zvolena akce "delete" a item se v košíku nachází je odstraněn.
+
+```
+    if ($_GET["action"] == "delete" && !empty($_GET["id"])) {
+        deleteFromCart($_GET["id"]);
+    }
+```
+
+- Odstraní item z košíku.
+
+```
     function deleteFromCart($productId) {
         unset($_SESSION["cart"][$productId]);
     }
