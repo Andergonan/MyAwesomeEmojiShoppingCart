@@ -7,6 +7,8 @@
 
 ## Dokumentace
 
+### Základní struktura a výpis produktů
+
 - Webová stránka je tvořena tzv. skládáním, index.php je doplněn dalšími soubory, které se do něj zapisují.
 
 ```
@@ -46,6 +48,8 @@ foreach($database as $item) {
 ```
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
+
+### Nákupní košík
 
 ## Zadání
 
