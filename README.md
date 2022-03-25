@@ -84,22 +84,25 @@ session_start();
     }
 ```
 
-`...["action"] == "add"` slouží jako "tlačítko" pro přidání množství.
+- Slouží jako "tlačítko" pro přidání množství.
+```
+...["action"] == "add"
+```
 
-Říká, že pokud daný item v košíku existuje, je 1.
+- Říká, že pokud daný item v košíku existuje, je 1.
 ```
 if (!array_key_exists($productId, $_SESSION["cart"])) {
                 $_SESSION["cart"][$productId]["quantity"] = 1;
  ```
  
- Pokud se daný item v košíku již nachází, přičte k němu "+ množství".
+- Pokud se daný item v košíku již nachází, přičte k němu "+ množství".
  ```
 else {
        $_SESSION["cart"][$productId]["quantity"]++;
  }
  ```
 
-
+#### Odebírání (odčítání) itemů
 
 - Odebírání itemů zaručují tyto řádky kódu.
 
