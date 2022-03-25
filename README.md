@@ -21,7 +21,7 @@
 @import "./file.scss";
 ```
 
-- Každý nabízený produkt, je utvořen pomocí proměnné s array, která se nakonec zapisuje do pole.
+- Každý nabízený produkt, je utvořen pomocí proměnné, která se nakonec zapisuje do pole.
  
 ```
  $hamburger = array(
@@ -33,7 +33,7 @@
 $database = array($Hamburger);
 ```
 
-- Produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach z pole `$database`. Pole `$databes` konvertujeme do volací proměnné `$item`. Pomocí `$item` poté voláme jednotlivé itemy a jejich atributy (`$item["name"]`, `$item["id"]` apod.) z `$database`.
+- Produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach z pole `$database`. Pole `$databes` konvertujeme do volací proměnné `$item`. Pomocí `$item` poté voláme jednotlivé itemy a jejich atributy (`$item["name"]`, `$item["id"]` apod.) z pole `$database`.
  ```
 foreach($database as $item) {
     echo 
