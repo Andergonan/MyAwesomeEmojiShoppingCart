@@ -7,19 +7,19 @@
 
 ## Dokumentace
 
-- Webová stránka je tvořena tzv. skládáním, index.php je doplněn dalšími soubory, které se do něj zapisují:
+- Webová stránka je tvořena tzv. skládáním, index.php je doplněn dalšími soubory, které se do něj zapisují.
 
 ```
 <?php include_once("appdata/fragments/file.php") ?>
 ```
 
-- Každý jednotlivý file, má také svoje styly, které jsou pak sjednoceny v hlavním style.scss pomocí:
+- Každý jednotlivý file, má své styly, které jsou sjednoceny v hlavním style.scss.
  
 ```
 @import "./file.scss";
 ```
 
-- Každý nabízený produkt, je utvořen pomocí proměnné s array, která se nakonec zapisuje do pole:
+- Každý nabízený produkt, je utvořen pomocí proměnné s array, která se nakonec zapisuje do pole.
  
 ```
  $hamburger = array(
@@ -31,7 +31,7 @@
 $database = array($Hamburger);
 ```
 
-- Produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach z pole `$database`. Pole `$databes` konvertujeme do volací proměnné `$item`. Pomocí `$item` poté voláme jednotlivé itemy a jejich atributy (`item.name`, `item.id` apod.) z `$database`:
+- Produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach z pole `$database`. Pole `$databes` konvertujeme do volací proměnné `$item`. Pomocí `$item` poté voláme jednotlivé itemy a jejich atributy (`$item["name"]`, `$item["id"]` apod.) z `$database`.
  ```
 foreach($database as $item) {
     echo 
