@@ -17,13 +17,15 @@
 
 > - Každý nabízený produkt, je utvořen pomocí proměnné s array, která se nakonec zapisuje do pole:
 > 
-> `$hamburger = array(
+```
+ $hamburger = array(
     "id" => 7,
     "img" => "🍔",
     "name" => "Hamburger",
     "price" => "32",
 );
-$database = array($Hamburger);`
+$database = array($Hamburger);
+```
 
 > - Nabízené produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach:
 > `foreach($database as $item) {
@@ -36,7 +38,7 @@ $database = array($Hamburger);`
         </div>';
 }
 ?>`
-> - Princip výpisu produktů v košíku je principiálně stejný, pouze jsou použity jiné hodnoty.
+> - Výpis produktů v košíku je principiálně stejný, pouze jsou použity jiné hodnoty.
 
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
