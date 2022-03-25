@@ -1,4 +1,5 @@
 # My Awesome Emoji Shopping Cart
+
 **Author:** David Anderle
 
 - Projekt zadaný školou
@@ -16,13 +17,13 @@
 ```
 
 - Každý jednotlivý file, má své styly, které jsou sjednoceny v hlavním style.scss.
- 
+
 ```
 @import "./file.scss";
 ```
 
 - Každý nabízený produkt, je utvořen pomocí proměnné, která se nakonec zapisuje do pole.
- 
+
 ```
  $hamburger = array(
     "id" => 7,
@@ -34,15 +35,16 @@ $database = array($Hamburger);
 ```
 
 - Produkty se vypisují pomocí foreach z pole `$database`. Pole `$databes` konvertujeme do volací proměnné `$item`. Pomocí `$item` poté voláme jednotlivé itemy a jejich atributy (`$item["name"]`, `$item["id"]` apod.) z pole `$database`.
- ```
+
+```
 foreach($database as $item) {
-    echo 
-        '<div class="items-container">
-            <div class="item-img">'.$item["img"].'</div>
-            <div class="item-name">'.$item["name"].'</div>
-            <div class="item-price">'.$item["price"].' Kč</div>
-            <a href="?action=add&id='.$item["id"].'" class="item-btn">👉 Do košíku</a>
-        </div>';
+   echo
+       '<div class="items-container">
+           <div class="item-img">'.$item["img"].'</div>
+           <div class="item-name">'.$item["name"].'</div>
+           <div class="item-price">'.$item["price"].' Kč</div>
+           <a href="?action=add&id='.$item["id"].'" class="item-btn">👉 Do košíku</a>
+       </div>';
 }
 ?>
 ```
@@ -56,7 +58,7 @@ foreach($database as $item) {
 
 ```
 session_start();
-    
+
     function getBy($att, $value, $array) {
         foreach ($array as $key => $val) {
             if ($val[$att] === $value) {
@@ -84,6 +86,7 @@ session_start();
 ```
 
 - Pokud je zvolena akce "add".
+
 ```
     if ($_GET["action"] == "add" && !empty($_GET["id"])) {
         addToCart($_GET["id"]);
@@ -91,22 +94,25 @@ session_start();
 ```
 
 - Přidává množství.
+
 ```
 ...["action"] == "add"
 ```
 
 - Říká, že pokud daný item v košíku existuje, je 1.
+
 ```
 if (!array_key_exists($productId, $_SESSION["cart"])) {
                 $_SESSION["cart"][$productId]["quantity"] = 1;
- ```
- 
+```
+
 - Přičítá množství.
- ```
+
+```
 else {
-       $_SESSION["cart"][$productId]["quantity"]++;
- }
- ```
+      $_SESSION["cart"][$productId]["quantity"]++;
+}
+```
 
 #### Odebírání (odčítání) itemů
 
@@ -198,7 +204,7 @@ $totalPrice = 0;
                 <a href="?action=delete&id='.$item["id"].'" class="cart-btn">Odebrat</a>
             </div>';
     }
-    
+
     echo "<div class='cart-total-price'>Celková cena: $totalPrice Kč</div>" //print total price
 ```
 
@@ -212,13 +218,13 @@ $totalPrice = 0;
 
 ```
  $totalPrice = $totalPrice + ($value["quantity"] * $item["price"]);
- ```
- 
- - Vypisuje `$totalPrice`.
+```
 
- ```
- echo "<div class='cart-total-price'>Celková cena: $totalPrice Kč</div>" //print total price
- ```
+- Vypisuje `$totalPrice`.
+
+```
+echo "<div class='cart-total-price'>Celková cena: $totalPrice Kč</div>" //print total price
+```
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/img_2.png)
 
