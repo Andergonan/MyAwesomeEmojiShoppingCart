@@ -51,8 +51,8 @@ foreach($database as $item) {
 
 ### Nákupní košík
 
-- Nákupní košík používá seassion. Hodnoty itemů volá funkcí getBy.
 - Přidávání, odčítání a odebírání itemů probíhá metodou `$_Get`.
+- Nákupní košík používá seassion. Hodnoty itemů volá funkcí getBy.
 
 ```
 session_start();
