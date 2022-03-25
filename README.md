@@ -31,7 +31,7 @@
 $database = array($Hamburger);
 ```
 
-- Nabízené produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach:
+- Produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach:
  ```
 foreach($database as $item) {
     echo 
@@ -44,7 +44,7 @@ foreach($database as $item) {
 }
 ?>
 ```
-- Výpis produktů v košíku je principiálně stejný, pouze jsou použity jiné hodnoty.
+- Výpis produktů z košíku je principiálně stejný, pouze jsou použity jiné hodnoty.
 
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
