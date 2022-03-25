@@ -202,7 +202,7 @@ $totalPrice = 0;
     echo "<div class='cart-total-price'>Celková cena: $totalPrice Kč</div>" //print total price
 ```
 
-- Po načtení stránky je celková cena na hodnotě 0
+- Po načtení stránky je celková cena na hodnotě 0.
 
 ```
 $totalPrice = 0;
@@ -212,6 +212,12 @@ $totalPrice = 0;
 
 ```
  $totalPrice = $totalPrice + ($value["quantity"] * $item["price"]);
+ ```
+ 
+ - Vypisuje `$totalPrice`.
+
+ ```
+ echo "<div class='cart-total-price'>Celková cena: $totalPrice Kč</div>" //print total price
  ```
 
 ![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/img_2.png)
