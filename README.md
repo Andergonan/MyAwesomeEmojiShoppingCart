@@ -47,7 +47,7 @@ foreach($database as $item) {
 ?>
 ```
 
-![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/screenshot_pc_1.png)
+![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/img_1.png)
 
 ### Nákupní košík
 
