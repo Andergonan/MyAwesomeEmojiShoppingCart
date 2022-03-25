@@ -208,7 +208,7 @@ $totalPrice = 0;
 $totalPrice = 0;
 ```
 
-- Sčítá totalPrice s cenou všech produtů a jejich počtu v košíku.
+- Sčítá `$totalPrice` s cenou `$item["price"]` všech produtů a jejich množství `$value["quantity"]` v košíku.
 
 ```
  $totalPrice = $totalPrice + ($value["quantity"] * $item["price"]);
