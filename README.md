@@ -51,6 +51,22 @@ foreach($database as $item) {
 
 ### Nákupní košík
 
+- Nákupní košík používá seassion. Hodnoty itemů volá funkcí getBy
+
+```
+session_start();
+    
+    function getBy($att, $value, $array) {
+        foreach ($array as $key => $val) {
+            if ($val[$att] === $value) {
+                return $key;
+            }
+        }
+        return null;
+    }
+
+```
+
 ## Zadání
 
 > Napište demo program se dvěma třídami dle vašeho uvážení, které spolu nějak interagují (dědění, skládání atp).
