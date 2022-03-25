@@ -83,6 +83,13 @@ session_start();
     }
 ```
 
+- Pokud je zvolena akce "add"
+```
+    if ($_GET["action"] == "add" && !empty($_GET["id"])) {
+        addToCart($_GET["id"]);
+    }
+```
+
 - Pokud chceme, tak přidává množství pro určitý item.
 ```
 ...["action"] == "add"
@@ -103,7 +110,6 @@ else {
 
 #### Odebírání (odčítání) itemů
 
-
 ```
 if ($_GET["action"] == "remove" && !empty($_GET["id"])) {
         removeFromCart($_GET["id"]);
@@ -119,7 +125,9 @@ if ($_GET["action"] == "remove" && !empty($_GET["id"])) {
     }
 ```
 
-- Maznání itemů zaručují tyto řádky kódu.
+- 
+
+#### Maznání itemů
 
 ```
     //delete the selected item
@@ -131,7 +139,7 @@ if ($_GET["action"] == "remove" && !empty($_GET["id"])) {
     }
 ```
 
-- Výpis
+#### Výpis do HTML
 
 ```
 $totalPrice = 0;
