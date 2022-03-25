@@ -134,6 +134,8 @@ $totalPrice = 0;
     echo "<div class='cart-total-price'>Celková cena: $totalPrice Kč</div>" //print total price
 ```
 
+![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/img_2.png)
+
 ## Zadání
 
 > Napište demo program se dvěma třídami dle vašeho uvážení, které spolu nějak interagují (dědění, skládání atp).
