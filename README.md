@@ -9,11 +9,15 @@
 
 > - Webová stránka je tvořena tzv. skládáním, index.php je doplněn dalšími soubory, které se do něj zapisují:
 >
-> `<?php include_once("appdata/fragments/file.php") ?>`
+```
+<?php include_once("appdata/fragments/file.php") ?>
+```
 >
 > - Každý jednotlivý file, má také svoje styly, které jsou pak sjednoceny v hlavním style.scss pomocí:
 > 
-> `@import "./file.scss";`
+```
+@import "./file.scss";
+```
 
 > - Každý nabízený produkt, je utvořen pomocí proměnné s array, která se nakonec zapisuje do pole:
 > 
