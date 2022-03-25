@@ -52,6 +52,7 @@ foreach($database as $item) {
 ### Nákupní košík
 
 - Nákupní košík používá seassion. Hodnoty itemů volá funkcí getBy.
+- Přidávání, odčítání a odebírání itemů probíhá metodou `$_Get`.
 
 ```
 session_start();
@@ -69,8 +70,6 @@ session_start();
 
 #### Přidávání itemů
 
-- Přidávání itemů probía metodou `$_Get`.
-
 ```
     if ($_GET["action"] == "add" && !empty($_GET["id"])) {
         addToCart($_GET["id"]);
@@ -84,7 +83,7 @@ session_start();
     }
 ```
 
-- Slouží jako "tlačítko" pro přidání množství.
+- Pokud chceme, tak přidává množství pro určitý item.
 ```
 ...["action"] == "add"
 ```
@@ -104,7 +103,6 @@ else {
 
 #### Odebírání (odčítání) itemů
 
-- Odebírání itemů zaručují tyto řádky kódu.
 
 ```
 if ($_GET["action"] == "remove" && !empty($_GET["id"])) {
