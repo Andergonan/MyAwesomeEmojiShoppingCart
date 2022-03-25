@@ -31,7 +31,7 @@
 $database = array($Hamburger);
 ```
 
-- Produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach:
+- Produkty, které jsou nabízeny, nebo ty, které jste si vložily do košíku se vypisují pomocí foreach z pole `$database`:
  ```
 foreach($database as $item) {
     echo 
