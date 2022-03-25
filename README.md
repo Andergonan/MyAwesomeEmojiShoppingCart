@@ -5,7 +5,7 @@
 - Nepoužívá sql, pouze pole v php
 - Pro spuštění je potřeba soubory nahrát na váš server
 
-## Popis
+## Dokumentace
 
 - Webová stránka je tvořena tzv. skládáním, index.php je doplněn dalšími soubory, které se do něj zapisují:
 
