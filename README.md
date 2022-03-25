@@ -67,7 +67,9 @@ session_start();
 
 ```
 
-- Přidávání itemů zaručují tyto řádky kódu. 
+#### Přidávání itemů
+
+- Přidávání itemů probía metodou `$_Get`.
 
 ```
     if ($_GET["action"] == "add" && !empty($_GET["id"])) {
@@ -81,6 +83,23 @@ session_start();
             }
     }
 ```
+
+`...["action"] == "add"` slouží jako "tlačítko" pro přidání množství.
+
+Říká, že pokud daný item v košíku existuje, je 1.
+```
+if (!array_key_exists($productId, $_SESSION["cart"])) {
+                $_SESSION["cart"][$productId]["quantity"] = 1;
+ ```
+ 
+ Pokud se daný item v košíku již nachází, přičte k němu "+ množství".
+ ```
+else {
+       $_SESSION["cart"][$productId]["quantity"]++;
+ }
+ ```
+
+
 
 - Odebírání itemů zaručují tyto řádky kódu.
 
