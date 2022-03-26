@@ -22,7 +22,7 @@
 @import "./file.scss";
 ```
 
-- Každý nabízený produkt, je utvořen pomocí proměnné, která se nakonec zapisuje do pole.
+- Každý nabízený produkt je utvořen pomocí pole (simuluje databázi).
 
 ```
  $hamburger = array(
@@ -31,6 +31,11 @@
     "name" => "Hamburger",
     "price" => "32",
 );
+```
+
+- Pole, ve kterém jsou zapsány jednotlivé položky (simuluje výpis z databáze).
+
+```
 $database = array($Hamburger);
 ```
 
