@@ -16,7 +16,7 @@
 <?php include_once("appdata/fragments/file.php") ?>
 ```
 
-- Každý jednotlivý file, má své styly, které jsou sjednoceny v hlavním style.scss.
+- Každý jednotlivý file má své styly, které jsou sjednoceny v hlavním style.scss.
 
 ```
 @import "./file.scss";
