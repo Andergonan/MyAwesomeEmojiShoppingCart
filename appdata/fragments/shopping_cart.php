@@ -1,8 +1,9 @@
 <?php
+class ShoppingCart {
     error_reporting (E_ALL ^ E_NOTICE); //prevents conflict with the cart by turning off the error message
     session_start();
 
-    function getBy($att, $value, $array) {
+    public function getBy($att, $value, $array) {
         foreach ($array as $key => $val) {
             if ($val[$att] === $value) {
                 return $key;
@@ -63,4 +64,5 @@
             </div>';
     }
     echo "<div class='cart-total-price'>Celková cena: $totalPrice Kč</div>" //print total price
+}
 ?>
