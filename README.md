@@ -54,7 +54,7 @@ foreach($database as $item) {
 ?>
 ```
 
-![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/img_1.png)
+![img_1.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/img_1.png)
 
 ### Nákupní košík
 
@@ -231,11 +231,11 @@ $totalPrice = 0;
 echo "<div class='cart-total-price'>Celková cena: $totalPrice Kč</div>" //print total price
 ```
 
-![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/img_2.png)
+![img_2.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/img_2.png)
 
 ### UML class diagram
 
-![screenshot_pc.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/classDiagram.png)
+![ClassDiagram.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/ClassDiagram.png)
 
 ## Zadání
 
