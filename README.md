@@ -235,7 +235,7 @@ echo "<div class='cart-total-price'>Celková cena: $totalPrice Kč</div>" //prin
 
 ### UML class diagram
 
-![ClassDiagram.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/ClassDiagram.png)
+![classDiagram.png](https://github.com/Andergonan/MyAwesomeEmojiShoppingCart/blob/main/img_documentation/classDiagram.png)
 
 ## Zadání
 
